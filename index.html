@@ -375,7 +375,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             box-shadow: 0 12px 40px rgba(0,119,182,0.12);
         }
         .service-card-header {
-            background: var(--gradient);
             padding: 24px;
             text-align: center;
         }
@@ -384,6 +383,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             color: var(--white);
             font-size: 1.15rem;
             font-family: 'Playfair Display', serif;
+        }
+        /* Color-coded service card headers */
+        .service-card.cat-blue .service-card-header {
+            background: linear-gradient(135deg, #0D47A1, #1565C0);
+        }
+        .service-card.cat-green .service-card-header {
+            background: linear-gradient(135deg, #1B5E20, #2E7D32);
+        }
+        .service-card.cat-purple .service-card-header {
+            background: linear-gradient(135deg, #4A148C, #6A1B9A);
+        }
+        .service-card.cat-orange .service-card-header {
+            background: linear-gradient(135deg, #BF360C, #E65100);
+        }
+        .service-card.cat-teal .service-card-header {
+            background: linear-gradient(135deg, #004D40, #00695C);
+        }
+        .service-card.cat-red .service-card-header {
+            background: linear-gradient(135deg, #B71C1C, #C62828);
         }
         .service-card-body { padding: 24px; }
         .service-card-body ul { list-style: none; }
@@ -397,10 +415,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
         .service-card-body li::before {
             content: '✓';
-            color: var(--success);
             font-weight: 700;
             flex-shrink: 0;
         }
+        .service-card.cat-blue .service-card-body li::before { color: #1565C0; }
+        .service-card.cat-green .service-card-body li::before { color: #2E7D32; }
+        .service-card.cat-purple .service-card-body li::before { color: #6A1B9A; }
+        .service-card.cat-orange .service-card-body li::before { color: #E65100; }
+        .service-card.cat-teal .service-card-body li::before { color: #00695C; }
+        .service-card.cat-red .service-card-body li::before { color: #C62828; }
 
         .about { background: var(--off-white); }
         .about-grid {
@@ -688,93 +711,98 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <p>Comprehensive healthcare services to keep you and your family healthy</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
+                <!-- General Consultations -->
+                <div class="service-card cat-blue">
                     <div class="service-card-header">
                         <div class="icon">🩺</div>
                         <h3>General Consultations</h3>
                     </div>
                     <div class="service-card-body">
                         <ul>
-                            <li>Full medical examinations</li>
-                            <li>Acute illness treatment</li>
-                            <li>Flu, colds & infections</li>
-                            <li>Referral to specialists</li>
-                            <li>Medical certificates</li>
+                            <li>Medical Consultation & Prescription (Adults & Children)</li>
+                            <li>Management of Common Medical Conditions</li>
+                            <li>Medical Check-Up</li>
+                            <li>Virtual Consultation</li>
                         </ul>
                     </div>
                 </div>
-                <div class="service-card">
+                <!-- Chronic Disease Management -->
+                <div class="service-card cat-green">
                     <div class="service-card-header">
                         <div class="icon">💉</div>
-                        <h3>Chronic Care Management</h3>
+                        <h3>Chronic Disease Management</h3>
                     </div>
                     <div class="service-card-body">
                         <ul>
-                            <li>Diabetes management</li>
-                            <li>Hypertension monitoring</li>
-                            <li>Asthma & COPD care</li>
-                            <li>Cholesterol management</li>
-                            <li>Regular health screenings</li>
+                            <li>Hypertension & Diabetes Management</li>
+                            <li>HIV & Tuberculosis Management</li>
+                            <li>HIV Counselling & Testing</li>
+                            <li>Pre & Post Exposure Prophylaxis (PrEP / PEP)</li>
                         </ul>
                     </div>
                 </div>
-                <div class="service-card">
+                <!-- Women's & Reproductive Health -->
+                <div class="service-card cat-purple">
                     <div class="service-card-header">
-                        <div class="icon">🔬</div>
-                        <h3>Minor Procedures</h3>
+                        <div class="icon">🤰</div>
+                        <h3>Women's & Reproductive Health</h3>
                     </div>
                     <div class="service-card-body">
                         <ul>
-                            <li>Wound care & stitches</li>
-                            <li>Abscess drainage</li>
-                            <li>Ingrown toenail removal</li>
-                            <li>Ear syringing</li>
-                            <li>Basic biopsies</li>
+                            <li>Antenatal Care (Pregnancy Care)</li>
+                            <li>Ultrasound Scan (Sonar)</li>
+                            <li>Women's Clinic</li>
+                            <li>Family Planning & Contraception</li>
+                            <li>PAP Smear for Cervical Cancer</li>
+                            <li>Pregnancy Test</li>
                         </ul>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-card-header">
-                        <div class="icon">👶</div>
-                        <h3>Family Healthcare</h3>
-                    </div>
-                    <div class="service-card-body">
-                        <ul>
-                            <li>Paediatric consultations</li>
-                            <li>Women's health</li>
-                            <li>Family planning</li>
-                            <li>Antenatal care</li>
-                            <li>Vaccinations</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-card-header">
-                        <div class="icon">📋</div>
-                        <h3>Occupational Health</h3>
-                    </div>
-                    <div class="service-card-body">
-                        <ul>
-                            <li>Pre-employment medicals</li>
-                            <li>Fitness certificates</li>
-                            <li>Drug & alcohol testing</li>
-                            <li>Audiometry testing</li>
-                            <li>Vision screening</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="service-card">
+                <!-- Men's Health & STI Clinic -->
+                <div class="service-card cat-orange">
                     <div class="service-card-header">
                         <div class="icon">🏋️</div>
-                        <h3>Wellness Services</h3>
+                        <h3>Men's Health & STI Clinic</h3>
                     </div>
                     <div class="service-card-body">
                         <ul>
-                            <li>Health risk assessments</li>
-                            <li>Weight management</li>
-                            <li>IV vitamin drips</li>
-                            <li>Blood pressure monitoring</li>
-                            <li>Blood sugar testing</li>
+                            <li>Men's Clinic</li>
+                            <li>Male Medical Circumcision</li>
+                            <li>Management of Sexually Transmitted Infections</li>
+                            <li>Pre-Marital Consultation</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Assessments & Procedures -->
+                <div class="service-card cat-teal">
+                    <div class="service-card-header">
+                        <div class="icon">📋</div>
+                        <h3>Assessments & Procedures</h3>
+                    </div>
+                    <div class="service-card-body">
+                        <ul>
+                            <li>Professional Driving Permit (PDP) Assessment</li>
+                            <li>Disability Grant Assessment (SASSA)</li>
+                            <li>Medical Fitness Assessment</li>
+                            <li>Minor Surgical Procedures</li>
+                            <li>Glucose, HIV & Urine Tests</li>
+                            <li>FREE Blood Pressure Check</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Wellness & Screening -->
+                <div class="service-card cat-red">
+                    <div class="service-card-header">
+                        <div class="icon">❤️‍🩹</div>
+                        <h3>Wellness & Screening</h3>
+                    </div>
+                    <div class="service-card-body">
+                        <ul>
+                            <li>Health Risk Assessments</li>
+                            <li>Weight Management</li>
+                            <li>Blood Pressure Monitoring</li>
+                            <li>Blood Sugar Testing</li>
+                            <li>Vaccinations</li>
                         </ul>
                     </div>
                 </div>
@@ -801,8 +829,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <div class="label">Patients Served</div>
                         </div>
                         <div class="stat-card">
-                            <div class="number">6</div>
-                            <div class="label">Service Categories</div>
+                            <div class="number">22+</div>
+                            <div class="label">Services Offered</div>
                         </div>
                         <div class="stat-card">
                             <div class="number">10+</div>
@@ -839,6 +867,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <span class="aid-badge">Profmed</span>
                 <span class="aid-badge">CompCare</span>
                 <span class="aid-badge">Keyhealth</span>
+                <span class="aid-badge">Bankmed</span>
                 <span class="aid-badge">Private / Cash</span>
             </div>
         </div>
