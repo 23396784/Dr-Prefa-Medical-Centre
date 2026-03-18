@@ -8,14 +8,23 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-55H383BR');</script>
     <!-- End Google Tag Manager -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us – CareCross Medical Center | GP in Piet Retief</title>
-    <meta name="description" content="Learn about CareCross Medical Center in Piet Retief. Led by Dr. Victor Prefa and partners, we bring 17+ years of clinical experience to the community.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us – Dr. Prefa Medical Centre | Dr. V. Prefa & Partners | GP in Piet Retief</title>
+    <meta name="description" content="Learn about Dr. Prefa Medical Centre in Piet Retief. Led by Dr. V. Prefa with over 17 years of clinical experience across Africa. Trusted family healthcare.">
+    <meta name="keywords" content="about Dr Prefa Medical Centre, Dr Prefa Piet Retief, family doctor experience, GP Piet Retief">
     <meta name="robots" content="index, follow">
+    <meta name="author" content="Dr. Prefa Medical Centre">
+
+    <meta property="og:title" content="About Us – Dr. Prefa Medical Centre">
+    <meta property="og:description" content="Meet the team behind Dr. Prefa Medical Centre. Over 17 years of clinical experience serving communities across Africa.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_ZA">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
     <style>
         :root {
             --primary: #0077b6;
@@ -34,75 +43,75 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
         body { font-family: 'DM Sans', sans-serif; color: var(--gray-800); line-height: 1.6; }
+
+        .top-bar { background: var(--primary-dark); color: var(--white); padding: 8px 0; font-size: 0.85rem; }
+        .top-bar .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+        .top-bar a { color: var(--primary-light); text-decoration: none; }
+        .top-bar a:hover { color: var(--white); }
+        .top-bar-right { display: flex; gap: 20px; align-items: center; }
+
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
-        /* Navbar */
         .navbar { background: var(--white); padding: 12px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
         .navbar .container { display: flex; justify-content: space-between; align-items: center; }
         .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-        .logo-icon { width: 48px; height: 48px; background: var(--gradient); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.4rem; position: relative; }
-        .logo-icon::before { content: '✚'; font-size: 1.6rem; }
+        .logo-icon { width: 48px; height: 48px; background: var(--gradient); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+        .logo-icon::before { content: '✚'; font-size: 1.6rem; color: white; }
         .logo-text h1 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--primary-dark); line-height: 1.1; }
         .logo-text span { font-size: 0.7rem; color: var(--gray-600); text-transform: uppercase; letter-spacing: 2px; }
         .nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
         .nav-links a { text-decoration: none; color: var(--gray-800); font-weight: 500; font-size: 0.95rem; transition: color 0.3s; }
         .nav-links a:hover { color: var(--primary); }
+        .nav-links a.active { color: var(--primary); font-weight: 700; }
+
         .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; border-radius: 50px; font-weight: 600; text-decoration: none; transition: all 0.3s ease; font-size: 0.95rem; border: none; cursor: pointer; }
         .btn-primary { background: var(--gradient); color: var(--white); box-shadow: 0 4px 15px rgba(0,119,182,0.3); }
         .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 25px rgba(0,119,182,0.4); }
+        .btn-white { background: var(--white); color: var(--primary-dark); box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+
         .mobile-menu-btn { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--primary-dark); }
 
-        /* Hero Banner */
-        .page-hero { background: var(--gradient); padding: 60px 0; text-align: center; color: var(--white); }
-        .page-hero h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 12px; }
-        .page-hero p { color: rgba(255,255,255,0.85); font-size: 1.1rem; }
+        .page-header { background: var(--gradient); padding: 60px 0; text-align: center; color: white; position: relative; overflow: hidden; }
+        .page-header::before { content: ''; position: absolute; top: -50%; right: -20%; width: 500px; height: 500px; background: rgba(255,255,255,0.04); border-radius: 50%; }
+        .page-header h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 10px; }
+        .page-header p { opacity: 0.85; font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
 
-        /* About Content */
-        .about-section { padding: 60px 0; }
-        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
-        .about-content h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--primary-dark); margin-bottom: 20px; }
-        .about-content p { color: var(--gray-600); margin-bottom: 16px; font-size: 1.02rem; }
-        .about-image { background: var(--gradient); border-radius: 24px; padding: 40px; color: var(--white); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; min-height: 350px; }
-        .about-image .shield { font-size: 5rem; margin-bottom: 20px; }
-        .about-image h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 12px; }
-        .about-image p { color: rgba(255,255,255,0.8); max-width: 300px; }
+        section { padding: 70px 0; }
+        .badge { display: inline-block; background: rgba(0,119,182,0.1); color: var(--primary); padding: 6px 18px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
 
-        /* Stats */
-        .stats-section { background: var(--off-white); padding: 60px 0; }
-        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-        .stat-card { background: var(--white); padding: 32px 24px; border-radius: 16px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .about-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .about-intro-text h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--primary-dark); margin-bottom: 16px; }
+        .about-intro-text p { color: var(--gray-600); margin-bottom: 14px; font-size: 1rem; }
+
+        .about-image-box { background: var(--gradient); border-radius: 24px; padding: 50px 40px; text-align: center; color: white; }
+        .about-image-box .shield { font-size: 5rem; margin-bottom: 16px; }
+        .about-image-box h3 { font-family: 'Playfair Display', serif; font-size: 1.6rem; margin-bottom: 10px; }
+        .about-image-box p { opacity: 0.8; }
+
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 60px; }
+        .stat-card { background: var(--white); padding: 30px 20px; border-radius: 16px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid var(--gray-100); }
         .stat-card .number { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--primary); font-weight: 700; }
-        .stat-card .label { color: var(--gray-600); font-size: 0.9rem; margin-top: 4px; }
+        .stat-card .label { color: var(--gray-600); font-size: 0.88rem; margin-top: 4px; }
 
-        /* Values */
-        .values-section { padding: 60px 0; }
-        .section-header { text-align: center; margin-bottom: 40px; }
-        .section-header .badge { display: inline-block; background: rgba(0,119,182,0.1); color: var(--primary); padding: 6px 18px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
-        .section-header h2 { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: var(--primary-dark); margin-bottom: 12px; }
-        .section-header p { color: var(--gray-600); font-size: 1.05rem; max-width: 600px; margin: 0 auto; }
-        .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
-        .value-card { background: var(--white); border: 1px solid var(--gray-100); border-radius: 20px; padding: 32px; text-align: center; transition: all 0.3s; }
-        .value-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,119,182,0.12); }
-        .value-card .icon { font-size: 2.5rem; margin-bottom: 16px; }
-        .value-card h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--primary-dark); margin-bottom: 12px; }
+        .values-section { background: var(--off-white); }
+        .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 40px; }
+        .value-card { background: var(--white); padding: 32px; border-radius: 16px; border: 1px solid var(--gray-100); text-align: center; transition: all 0.3s; }
+        .value-card:hover { transform: translateY(-5px); box-shadow: 0 12px 40px rgba(0,119,182,0.1); }
+        .value-card .icon { font-size: 2.5rem; margin-bottom: 12px; }
+        .value-card h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--primary-dark); margin-bottom: 10px; }
         .value-card p { color: var(--gray-600); font-size: 0.93rem; }
 
-        /* CTA */
         .cta-banner { background: var(--gradient); padding: 60px 0; text-align: center; }
         .cta-banner h2 { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--white); margin-bottom: 12px; }
         .cta-banner p { color: rgba(255,255,255,0.85); margin-bottom: 28px; font-size: 1.1rem; }
         .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-        .btn-white { background: var(--white); color: var(--primary-dark); box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        .btn-white:hover { transform: translateY(-2px); box-shadow: 0 6px 25px rgba(0,0,0,0.15); }
-        .btn-outline { background: transparent; color: var(--primary); border: 2px solid var(--primary); }
 
-        /* Footer */
         .footer { background: #0d0d1a; color: rgba(255,255,255,0.5); padding: 40px 0 20px; text-align: center; }
         .footer p { font-size: 0.85rem; }
         .footer a { color: var(--accent); text-decoration: none; }
 
         @media (max-width: 968px) {
-            .about-grid { grid-template-columns: 1fr; }
+            .about-intro { grid-template-columns: 1fr; }
             .stats-grid { grid-template-columns: repeat(2, 1fr); }
             .values-grid { grid-template-columns: 1fr; }
             .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); flex-direction: column; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); gap: 16px; }
@@ -110,17 +119,29 @@
             .mobile-menu-btn { display: block; }
         }
         @media (max-width: 600px) {
-            .page-hero h2 { font-size: 1.8rem; }
-            .stats-grid { grid-template-columns: 1fr; }
-            .cta-buttons { flex-direction: column; align-items: center; }
+            .top-bar .container { flex-direction: column; text-align: center; }
+            .top-bar-right { flex-direction: column; gap: 4px; }
+            .page-header h2 { font-size: 1.8rem; }
+            .stats-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
         }
     </style>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55H383BR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55H383BR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="container">
+            <span>📍 Shop 18, 15 Essa-Ayob Road, Kempville Shopping Centre, Piet Retief 2380</span>
+            <div class="top-bar-right">
+                <a href="tel:+27178263711">📞 017 826 3711</a>
+                <a href="tel:+27710465187">📱 071 046 5187</a>
+                <a href="mailto:info.carecross@gmail.com">✉️ info.carecross@gmail.com</a>
+            </div>
+        </div>
+    </div>
 
     <!-- NAVBAR -->
     <nav class="navbar">
@@ -128,14 +149,15 @@
             <a href="index.html" class="logo">
                 <div class="logo-icon"></div>
                 <div class="logo-text">
-                    <h1>CareCross</h1>
-                    <span>Medical Center</span>
+                    <h1>Dr. Prefa</h1>
+                    <span>Medical Centre</span>
                 </div>
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#services">Services</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="after-hours.html">After-Hours</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="tel:+27178263711" class="btn btn-primary">📞 Call Now</a></li>
             </ul>
@@ -143,36 +165,32 @@
         </div>
     </nav>
 
-    <!-- HERO -->
-    <section class="page-hero">
+    <!-- PAGE HEADER -->
+    <section class="page-header">
         <div class="container">
             <h2>About Us</h2>
-            <p>Trusted healthcare in the heart of Piet Retief</p>
+            <p>Trusted healthcare in Piet Retief — built on experience, guided by compassion</p>
         </div>
     </section>
 
-    <!-- ABOUT -->
-    <section class="about-section">
+    <!-- ABOUT INTRO -->
+    <section>
         <div class="container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <h3>Caring for Our Community</h3>
-                    <p>CareCross Medical Center is a trusted general practice conveniently located in the Kempville Shopping Center, Piet Retief. We are committed to providing affordable, accessible, and high-quality medical care to the Piet Retief community and surrounding areas.</p>
-                    <p>Led by Dr. Victor Prefa and partners, our team brings extensive clinical experience across multiple countries and a genuine passion for patient care. Whether you need a routine check-up, chronic disease management, or minor surgical procedures, we are here for you.</p>
-                    <p>Our practice offers a full range of general medical services including GP consultations, chronic care management, minor procedures, occupational health assessments, family healthcare, and wellness services — all under one roof.</p>
+            <div class="about-intro">
+                <div class="about-intro-text">
+                    <div class="badge">Our Story</div>
+                    <h3>Your Trusted Family Doctor in Piet Retief</h3>
+                    <p>Dr. Prefa Medical Centre is a patient-centred general practice located at Kempville Shopping Centre, Piet Retief. We provide comprehensive primary healthcare services to individuals and families across the community.</p>
+                    <p>Led by Dr. V. Prefa, our practice brings together over 17 years of clinical experience spanning multiple healthcare settings across Nigeria, Lesotho, and South Africa. From routine consultations and chronic disease management to minor procedures and wellness services, we are committed to delivering professional, compassionate care.</p>
+                    <p>We believe that quality healthcare should be accessible to everyone. That's why we accept most major medical aids and welcome cash patients at affordable rates.</p>
                 </div>
-                <div class="about-image">
+                <div class="about-image-box">
                     <div class="shield">🛡️</div>
-                    <h3>CareCross</h3>
-                    <p>Your trusted healthcare partner — where quality meets compassion</p>
+                    <h3>Dr. Prefa Medical Centre</h3>
+                    <p>Where quality meets compassion — your trusted healthcare partner</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- STATS -->
-    <section class="stats-section">
-        <div class="container">
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="number">17+</div>
@@ -183,8 +201,8 @@
                     <div class="label">Patients Served</div>
                 </div>
                 <div class="stat-card">
-                    <div class="number">6</div>
-                    <div class="label">Service Categories</div>
+                    <div class="number">22+</div>
+                    <div class="label">Services Offered</div>
                 </div>
                 <div class="stat-card">
                     <div class="number">10+</div>
@@ -194,29 +212,61 @@
         </div>
     </section>
 
+    <!-- QUALIFICATIONS -->
+    <section style="background: var(--off-white);">
+        <div class="container">
+            <div style="text-align:center; margin-bottom: 40px;">
+                <div class="badge">Qualifications</div>
+                <h2 style="font-family:'Playfair Display',serif; font-size:2rem; color:var(--primary-dark); margin-top:8px;">Dr. V. Prefa — Principal Practitioner</h2>
+            </div>
+            <div style="max-width:700px; margin:0 auto; background:white; padding:36px; border-radius:16px; box-shadow:0 4px 20px rgba(0,0,0,0.06); border:1px solid var(--gray-100);">
+                <p style="color:var(--gray-600); margin-bottom:16px;"><strong style="color:var(--primary-dark);">MBBS</strong> — University of Ibadan, Nigeria</p>
+                <p style="color:var(--gray-600); margin-bottom:16px;"><strong style="color:var(--primary-dark);">MPH</strong> — Master of Public Health, London</p>
+                <p style="color:var(--gray-600); margin-bottom:16px;"><strong style="color:var(--primary-dark);">PGD Cert (UCT)</strong> — Postgraduate Certificate, University of Cape Town</p>
+                <p style="color:var(--gray-600); margin-bottom:16px;"><strong style="color:var(--primary-dark);">MSc Data Science & Business Analytics</strong> — Deakin University (Distinction)</p>
+                <p style="color:var(--gray-600); margin-bottom:16px;"><strong style="color:var(--primary-dark);">HPCSA Registration</strong> — MP 0853968 | PR 1227335</p>
+                <p style="color:var(--gray-600);"><strong style="color:var(--primary-dark);">Experience</strong> — Clinical practice across Nigeria, Lesotho, and South Africa</p>
+            </div>
+        </div>
+    </section>
+
     <!-- VALUES -->
     <section class="values-section">
         <div class="container">
-            <div class="section-header">
+            <div style="text-align:center;">
                 <div class="badge">Our Values</div>
-                <h2>What We Stand For</h2>
-                <p>The principles that guide everything we do</p>
+                <h2 style="font-family:'Playfair Display',serif; font-size:2rem; color:var(--primary-dark); margin-top:8px;">What Drives Us</h2>
             </div>
             <div class="values-grid">
                 <div class="value-card">
-                    <div class="icon">❤️</div>
+                    <div class="icon">💙</div>
                     <h3>Compassion</h3>
-                    <p>We treat every patient with dignity, empathy, and genuine care for their wellbeing</p>
+                    <p>We treat every patient with empathy, dignity, and genuine care — because your health matters to us.</p>
                 </div>
                 <div class="value-card">
-                    <div class="icon">⭐</div>
+                    <div class="icon">🎯</div>
                     <h3>Excellence</h3>
-                    <p>We uphold the highest standards of medical practice and continuously improve our services</p>
+                    <p>We uphold the highest medical standards, continuously updating our knowledge and practices.</p>
                 </div>
                 <div class="value-card">
                     <div class="icon">🤝</div>
                     <h3>Accessibility</h3>
-                    <p>We believe quality healthcare should be affordable and available to everyone in our community</p>
+                    <p>Quality healthcare should be available to everyone. We accept medical aids and offer affordable cash rates.</p>
+                </div>
+                <div class="value-card">
+                    <div class="icon">🔒</div>
+                    <h3>Confidentiality</h3>
+                    <p>Your personal and medical information is treated with the utmost privacy and protected under POPIA.</p>
+                </div>
+                <div class="value-card">
+                    <div class="icon">👨‍👩‍👧‍👦</div>
+                    <h3>Family-Centred</h3>
+                    <p>From paediatrics to geriatrics, we provide holistic care for every member of your family.</p>
+                </div>
+                <div class="value-card">
+                    <div class="icon">🌍</div>
+                    <h3>Community</h3>
+                    <p>We are proud to serve the Piet Retief community and are committed to improving local health outcomes.</p>
                 </div>
             </div>
         </div>
@@ -226,10 +276,10 @@
     <section class="cta-banner">
         <div class="container">
             <h2>Ready to Book an Appointment?</h2>
-            <p>Contact us today — walk-ins are also welcome.</p>
+            <p>Contact us today.</p>
             <div class="cta-buttons">
                 <a href="tel:+27178263711" class="btn btn-white">📞 Call 017 826 3711</a>
-                <a href="contact.html" class="btn btn-outline" style="color:white;border-color:rgba(255,255,255,0.5);">View Contact Details →</a>
+                <a href="contact.html" class="btn btn-primary" style="border: 2px solid white;">Contact Us</a>
             </div>
         </div>
     </section>
@@ -237,8 +287,9 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 CareCross Medical Center — Dr. V. Prefa & Partners. All rights reserved.</p>
-            <p style="margin-top:8px;">Shop 18, Kempville Shopping Center, Piet Retief 2380 | <a href="tel:+27178263711">017 826 3711</a></p>
+            <p>&copy; 2026 Dr. Prefa Medical Centre — Dr. V. Prefa & Partners. All rights reserved.</p>
+            <p style="margin-top:8px;">Shop 18, 15 Essa-Ayob Road, Kempville Shopping Centre, Piet Retief 2380 | <a href="tel:+27178263711">017 826 3711</a></p>
+            <p style="margin-top:8px;"><a href="privacy.html">Privacy Policy</a> | <a href="sitemap.html">Sitemap</a></p>
         </div>
     </footer>
 </body>
