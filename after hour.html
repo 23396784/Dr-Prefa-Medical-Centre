@@ -8,14 +8,23 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-55H383BR');</script>
     <!-- End Google Tag Manager -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>After Hours – CareCross Medical Center | Emergency GP in Piet Retief</title>
-    <meta name="description" content="Need a doctor after hours in Piet Retief? CareCross Medical Center provides after-hours emergency contact information and guidance.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After-Hours Medical Care – Dr. Prefa Medical Centre | Piet Retief</title>
+    <meta name="description" content="After-hours doctor in Piet Retief. Dr. Prefa Medical Centre provides evening and weekend medical care for emergencies and urgent health needs. Call now.">
+    <meta name="keywords" content="after hours doctor Piet Retief, emergency doctor Piet Retief, weekend doctor, evening clinic Piet Retief, urgent care Piet Retief">
     <meta name="robots" content="index, follow">
+    <meta name="author" content="Dr. Prefa Medical Centre">
+
+    <meta property="og:title" content="After-Hours Medical Care – Dr. Prefa Medical Centre">
+    <meta property="og:description" content="Need a doctor after hours in Piet Retief? Dr. Prefa Medical Centre provides evening and weekend care. Call us now.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_ZA">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
     <style>
         :root {
             --primary: #0077b6;
@@ -28,121 +37,121 @@
             --gray-600: #6c757d;
             --gray-800: #343a40;
             --dark: #1a1a2e;
+            --danger: #dc3545;
             --gradient: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--accent) 100%);
-            --emergency: #e63946;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
         body { font-family: 'DM Sans', sans-serif; color: var(--gray-800); line-height: 1.6; }
+
+        .top-bar { background: var(--primary-dark); color: var(--white); padding: 8px 0; font-size: 0.85rem; }
+        .top-bar .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+        .top-bar a { color: var(--primary-light); text-decoration: none; }
+        .top-bar a:hover { color: var(--white); }
+        .top-bar-right { display: flex; gap: 20px; align-items: center; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
-        /* Navbar */
         .navbar { background: var(--white); padding: 12px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
         .navbar .container { display: flex; justify-content: space-between; align-items: center; }
         .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-        .logo-icon { width: 48px; height: 48px; background: var(--gradient); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.4rem; position: relative; }
-        .logo-icon::before { content: '✚'; font-size: 1.6rem; }
+        .logo-icon { width: 48px; height: 48px; background: var(--gradient); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+        .logo-icon::before { content: '✚'; font-size: 1.6rem; color: white; }
         .logo-text h1 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--primary-dark); line-height: 1.1; }
         .logo-text span { font-size: 0.7rem; color: var(--gray-600); text-transform: uppercase; letter-spacing: 2px; }
         .nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
         .nav-links a { text-decoration: none; color: var(--gray-800); font-weight: 500; font-size: 0.95rem; transition: color 0.3s; }
         .nav-links a:hover { color: var(--primary); }
+        .nav-links a.active { color: var(--primary); font-weight: 700; }
         .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; border-radius: 50px; font-weight: 600; text-decoration: none; transition: all 0.3s ease; font-size: 0.95rem; border: none; cursor: pointer; }
         .btn-primary { background: var(--gradient); color: var(--white); box-shadow: 0 4px 15px rgba(0,119,182,0.3); }
-        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 25px rgba(0,119,182,0.4); }
+        .btn-primary:hover { transform: translateY(-2px); }
+        .btn-white { background: var(--white); color: var(--primary-dark); box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .btn-danger { background: var(--danger); color: var(--white); box-shadow: 0 4px 15px rgba(220,53,69,0.3); }
+        .btn-danger:hover { transform: translateY(-2px); }
         .mobile-menu-btn { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--primary-dark); }
 
-        /* Hero Banner */
-        .page-hero { background: linear-gradient(135deg, #1a1a2e 0%, #2d1b3d 50%, var(--emergency) 100%); padding: 60px 0; text-align: center; color: var(--white); }
-        .page-hero h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 12px; }
-        .page-hero p { color: rgba(255,255,255,0.85); font-size: 1.1rem; }
+        /* Emergency banner */
+        .emergency-banner { background: linear-gradient(135deg, #b71c1c, #d32f2f); padding: 60px 0; text-align: center; color: white; position: relative; overflow: hidden; }
+        .emergency-banner::before { content: ''; position: absolute; top: -50%; right: -20%; width: 500px; height: 500px; background: rgba(255,255,255,0.04); border-radius: 50%; }
+        .emergency-banner h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 12px; }
+        .emergency-banner p { opacity: 0.9; font-size: 1.15rem; max-width: 600px; margin: 0 auto 24px; }
+        .emergency-phones { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .emergency-phones a { background: white; color: #b71c1c; padding: 14px 32px; border-radius: 50px; font-weight: 700; font-size: 1.1rem; text-decoration: none; transition: all 0.3s; }
+        .emergency-phones a:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.2); }
 
-        /* Emergency Banner */
-        .emergency-banner { background: var(--emergency); color: var(--white); padding: 20px 0; text-align: center; }
-        .emergency-banner p { font-size: 1.1rem; font-weight: 600; }
-        .emergency-banner a { color: var(--white); text-decoration: underline; font-size: 1.2rem; }
+        section { padding: 70px 0; }
+        .badge { display: inline-block; background: rgba(0,119,182,0.1); color: var(--primary); padding: 6px 18px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
 
-        /* Content */
-        .after-hours-section { padding: 60px 0; }
-        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 40px; }
-        .info-card { background: var(--white); border: 1px solid var(--gray-100); border-radius: 20px; padding: 36px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .info-card h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--primary-dark); margin-bottom: 16px; }
-        .info-card p { color: var(--gray-600); margin-bottom: 12px; font-size: 0.98rem; }
-        .info-card a { color: var(--primary); text-decoration: none; font-weight: 600; }
-        .info-card a:hover { text-decoration: underline; }
-        .info-card .icon { font-size: 2rem; margin-bottom: 12px; }
+        .conditions-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+        .condition-card { background: var(--white); padding: 28px; border-radius: 16px; border: 1px solid var(--gray-100); text-align: center; transition: all 0.3s; }
+        .condition-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .condition-card .icon { font-size: 2.2rem; margin-bottom: 10px; }
+        .condition-card h3 { font-size: 1.05rem; color: var(--primary-dark); margin-bottom: 8px; }
+        .condition-card p { color: var(--gray-600); font-size: 0.9rem; }
 
-        /* Emergency Numbers */
-        .emergency-section { background: var(--off-white); padding: 60px 0; }
-        .section-header { text-align: center; margin-bottom: 40px; }
-        .section-header .badge { display: inline-block; background: rgba(230,57,70,0.1); color: var(--emergency); padding: 6px 18px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
-        .section-header h2 { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: var(--primary-dark); margin-bottom: 12px; }
-        .section-header p { color: var(--gray-600); font-size: 1.05rem; max-width: 600px; margin: 0 auto; }
-        .emergency-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-        .emergency-card { background: var(--white); border-radius: 16px; padding: 28px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 4px solid var(--emergency); }
-        .emergency-card h4 { font-size: 1.05rem; color: var(--primary-dark); margin-bottom: 8px; }
-        .emergency-card a { color: var(--emergency); font-size: 1.3rem; font-weight: 700; text-decoration: none; }
-        .emergency-card a:hover { text-decoration: underline; }
-        .emergency-card p { color: var(--gray-600); font-size: 0.85rem; margin-top: 4px; }
+        .how-it-works { background: var(--off-white); }
+        .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 40px; }
+        .step-card { text-align: center; }
+        .step-number { width: 60px; height: 60px; background: var(--gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 700; margin: 0 auto 16px; }
+        .step-card h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--primary-dark); margin-bottom: 8px; }
+        .step-card p { color: var(--gray-600); font-size: 0.93rem; }
 
-        /* Hours Reminder */
-        .hours-reminder { padding: 60px 0; text-align: center; }
-        .hours-card { max-width: 500px; margin: 0 auto; background: var(--white); border-radius: 20px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid var(--gray-100); }
-        .hours-card h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--primary-dark); margin-bottom: 24px; }
-        .hours-list { list-style: none; }
-        .hours-list li { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--gray-100); font-size: 0.95rem; }
-        .hours-list li:last-child { border-bottom: none; }
-        .hours-list .day { font-weight: 500; }
-        .hours-list .time { color: var(--primary); font-weight: 600; }
-        .hours-list .closed { color: var(--emergency); }
+        .important-note { background: #fff3cd; border: 1px solid #ffc107; border-radius: 16px; padding: 28px 32px; margin-top: 40px; }
+        .important-note h3 { color: #856404; font-size: 1.1rem; margin-bottom: 8px; }
+        .important-note p { color: #856404; font-size: 0.95rem; }
 
-        /* CTA */
         .cta-banner { background: var(--gradient); padding: 60px 0; text-align: center; }
         .cta-banner h2 { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--white); margin-bottom: 12px; }
         .cta-banner p { color: rgba(255,255,255,0.85); margin-bottom: 28px; font-size: 1.1rem; }
         .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-        .btn-white { background: var(--white); color: var(--primary-dark); box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        .btn-white:hover { transform: translateY(-2px); box-shadow: 0 6px 25px rgba(0,0,0,0.15); }
-        .btn-outline { background: transparent; color: var(--primary); border: 2px solid var(--primary); }
 
-        /* Footer */
         .footer { background: #0d0d1a; color: rgba(255,255,255,0.5); padding: 40px 0 20px; text-align: center; }
         .footer p { font-size: 0.85rem; }
         .footer a { color: var(--accent); text-decoration: none; }
 
         @media (max-width: 968px) {
-            .info-grid { grid-template-columns: 1fr; }
-            .emergency-grid { grid-template-columns: 1fr; }
+            .conditions-grid { grid-template-columns: 1fr; }
+            .steps-grid { grid-template-columns: 1fr; }
             .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); flex-direction: column; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); gap: 16px; }
             .nav-links.active { display: flex; }
             .mobile-menu-btn { display: block; }
         }
         @media (max-width: 600px) {
-            .page-hero h2 { font-size: 1.8rem; }
-            .cta-buttons { flex-direction: column; align-items: center; }
+            .top-bar .container { flex-direction: column; text-align: center; }
+            .top-bar-right { flex-direction: column; gap: 4px; }
+            .emergency-banner h2 { font-size: 1.8rem; }
+            .emergency-phones { flex-direction: column; align-items: center; }
         }
     </style>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55H383BR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55H383BR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-    <!-- NAVBAR -->
+    <div class="top-bar">
+        <div class="container">
+            <span>📍 Shop 18, 15 Essa-Ayob Road, Kempville Shopping Centre, Piet Retief 2380</span>
+            <div class="top-bar-right">
+                <a href="tel:+27178263711">📞 017 826 3711</a>
+                <a href="tel:+27710465187">📱 071 046 5187</a>
+                <a href="mailto:info.carecross@gmail.com">✉️ info.carecross@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">
                 <div class="logo-icon"></div>
                 <div class="logo-text">
-                    <h1>CareCross</h1>
-                    <span>Medical Center</span>
+                    <h1>Dr. Prefa</h1>
+                    <span>Medical Centre</span>
                 </div>
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#services">Services</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="after-hours.html" class="active">After-Hours</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="tel:+27178263711" class="btn btn-primary">📞 Call Now</a></li>
             </ul>
@@ -150,99 +159,89 @@
         </div>
     </nav>
 
-    <!-- HERO -->
-    <section class="page-hero">
-        <div class="container">
-            <h2>After Hours</h2>
-            <p>What to do when you need medical help outside our regular hours</p>
-        </div>
-    </section>
-
     <!-- EMERGENCY BANNER -->
-    <div class="emergency-banner">
+    <section class="emergency-banner">
         <div class="container">
-            <p>🚨 For life-threatening emergencies, call <a href="tel:10177">10177</a> (ambulance) or go to your nearest hospital emergency unit immediately.</p>
-        </div>
-    </div>
-
-    <!-- AFTER HOURS INFO -->
-    <section class="after-hours-section">
-        <div class="container">
-            <div class="info-grid">
-                <div class="info-card">
-                    <div class="icon">📱</div>
-                    <h3>After-Hours Contact</h3>
-                    <p>For non-emergency medical queries after hours, you can reach us via WhatsApp. We will respond as soon as possible.</p>
-                    <p><a href="https://wa.me/27735672753">💬 WhatsApp: 073 567 2753</a></p>
-                    <p style="color: #e63946; font-size: 0.85rem; margin-top: 12px;">Please note: WhatsApp is for non-urgent queries only. For emergencies, call 10177 or go to the nearest hospital.</p>
-                </div>
-                <div class="info-card">
-                    <div class="icon">🏥</div>
-                    <h3>Nearest Hospital</h3>
-                    <p>For after-hours emergencies, please visit:</p>
-                    <p><strong>Piet Retief Hospital</strong><br>
-                    Hospital Street, Piet Retief<br>
-                    <a href="tel:+27178260053">017 826 0053</a></p>
-                    <p style="margin-top: 12px;">The hospital emergency unit operates 24 hours.</p>
-                </div>
+            <h2>🚨 After-Hours Medical Care</h2>
+            <p>Need a doctor outside normal hours? We provide after-hours medical care for urgent and emergency health needs in Piet Retief.</p>
+            <div class="emergency-phones">
+                <a href="tel:+27178263711">📞 017 826 3711</a>
+                <a href="tel:+27710465187">📱 071 046 5187</a>
             </div>
         </div>
     </section>
 
-    <!-- EMERGENCY NUMBERS -->
-    <section class="emergency-section">
+    <!-- CONDITIONS -->
+    <section>
         <div class="container">
-            <div class="section-header">
-                <div class="badge">Emergency</div>
-                <h2>Important Emergency Numbers</h2>
-                <p>Save these numbers in your phone for emergencies</p>
+            <div style="text-align:center;">
+                <div class="badge">When to Call</div>
+                <h2 style="font-family:'Playfair Display',serif; font-size:2rem; color:var(--primary-dark); margin-top:8px;">Conditions We Treat After Hours</h2>
+                <p style="color:var(--gray-600); margin-top:10px; max-width:600px; margin-left:auto; margin-right:auto;">Our after-hours service covers a wide range of urgent medical needs.</p>
             </div>
-            <div class="emergency-grid">
-                <div class="emergency-card">
-                    <h4>Ambulance</h4>
-                    <a href="tel:10177">10177</a>
-                    <p>National emergency medical services</p>
+            <div class="conditions-grid">
+                <div class="condition-card">
+                    <div class="icon">🤒</div>
+                    <h3>Fever & Infections</h3>
+                    <p>High fevers, flu symptoms, ear infections, throat infections, and UTIs</p>
                 </div>
-                <div class="emergency-card">
-                    <h4>Police (SAPS)</h4>
-                    <a href="tel:10111">10111</a>
-                    <p>South African Police Service</p>
+                <div class="condition-card">
+                    <div class="icon">🤕</div>
+                    <h3>Pain & Injuries</h3>
+                    <p>Severe headaches, back pain, sprains, minor wounds, and burns</p>
                 </div>
-                <div class="emergency-card">
-                    <h4>Fire Department</h4>
-                    <a href="tel:10177">10177</a>
-                    <p>Fire and rescue services</p>
+                <div class="condition-card">
+                    <div class="icon">😷</div>
+                    <h3>Respiratory Issues</h3>
+                    <p>Asthma attacks, breathing difficulty, croup, chest infections</p>
                 </div>
-                <div class="emergency-card">
-                    <h4>ER24 Private Ambulance</h4>
-                    <a href="tel:084124">084 124</a>
-                    <p>Private emergency medical response</p>
+                <div class="condition-card">
+                    <div class="icon">🤢</div>
+                    <h3>Stomach & GI</h3>
+                    <p>Severe nausea, vomiting, diarrhoea, dehydration, abdominal pain</p>
                 </div>
-                <div class="emergency-card">
-                    <h4>Netcare 911</h4>
-                    <a href="tel:0823911">082 911</a>
-                    <p>Private emergency medical response</p>
+                <div class="condition-card">
+                    <div class="icon">🩹</div>
+                    <h3>Cuts & Wounds</h3>
+                    <p>Lacerations requiring stitches, wound cleaning, bite injuries</p>
                 </div>
-                <div class="emergency-card">
-                    <h4>Poison Information</h4>
-                    <a href="tel:0861555777">0861 555 777</a>
-                    <p>Poison information helpline</p>
+                <div class="condition-card">
+                    <div class="icon">⚡</div>
+                    <h3>Allergic Reactions</h3>
+                    <p>Hives, allergic swelling, insect bite reactions, medication reactions</p>
                 </div>
+            </div>
+
+            <div class="important-note">
+                <h3>⚠️ Life-Threatening Emergencies</h3>
+                <p>For severe chest pain, stroke symptoms, heavy uncontrolled bleeding, loss of consciousness, or other life-threatening emergencies, please call <strong>10177 (ambulance)</strong> or go directly to your nearest hospital emergency department.</p>
             </div>
         </div>
     </section>
 
-    <!-- HOURS REMINDER -->
-    <section class="hours-reminder">
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works">
         <div class="container">
-            <div class="hours-card">
-                <h3>🕐 Our Regular Hours</h3>
-                <ul class="hours-list">
-                    <li><span class="day">Monday – Friday</span><span class="time">09:00 – 17:00</span></li>
-                    <li><span class="day">Saturday</span><span class="time">09:00 – 13:00</span></li>
-                    <li><span class="day">Sunday</span><span class="closed">Closed</span></li>
-                    <li><span class="day">Public Holidays</span><span class="closed">Closed</span></li>
-                </ul>
+            <div style="text-align:center;">
+                <div class="badge">Simple Process</div>
+                <h2 style="font-family:'Playfair Display',serif; font-size:2rem; color:var(--primary-dark); margin-top:8px;">How It Works</h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Call Us</h3>
+                    <p>Phone our after-hours line at <strong>071 046 5187</strong>. Describe your symptoms so we can prepare.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Come In or We Come to You</h3>
+                    <p>Depending on your situation, visit us at the practice or arrange a home/virtual consultation.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Get Treated</h3>
+                    <p>Receive professional medical attention, prescriptions, and follow-up instructions.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -250,20 +249,20 @@
     <!-- CTA -->
     <section class="cta-banner">
         <div class="container">
-            <h2>During Office Hours?</h2>
-            <p>Call us or walk in — no appointment necessary.</p>
+            <h2>Don't Wait — Get Help Now</h2>
+            <p>Our after-hours team is ready to assist you. Call now for immediate medical attention.</p>
             <div class="cta-buttons">
-                <a href="tel:+27178263711" class="btn btn-white">📞 Call 017 826 3711</a>
-                <a href="contact.html" class="btn btn-outline" style="color:white;border-color:rgba(255,255,255,0.5);">View Contact Details →</a>
+                <a href="tel:+27710465187" class="btn btn-white">📱 Call 071 046 5187</a>
+                <a href="https://wa.me/27710465187" class="btn btn-primary" style="border: 2px solid white;">💬 WhatsApp Us</a>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 CareCross Medical Center — Dr. V. Prefa & Partners. All rights reserved.</p>
-            <p style="margin-top:8px;">Shop 18, Kempville Shopping Center, Piet Retief 2380 | <a href="tel:+27178263711">017 826 3711</a></p>
+            <p>&copy; 2026 Dr. Prefa Medical Centre — Dr. V. Prefa & Partners. All rights reserved.</p>
+            <p style="margin-top:8px;">Shop 18, 15 Essa-Ayob Road, Kempville Shopping Centre, Piet Retief 2380 | <a href="tel:+27178263711">017 826 3711</a></p>
+            <p style="margin-top:8px;"><a href="privacy.html">Privacy Policy</a> | <a href="sitemap.html">Sitemap</a></p>
         </div>
     </footer>
 </body>
